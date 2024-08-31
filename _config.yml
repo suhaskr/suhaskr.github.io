@@ -1,0 +1,29 @@
+permalink: /posts/:title
+markdown: kramdown
+  
+plugins:
+  - jekyll-sitemap
+  - jekyll-redirect-from
+
+name: Indian Institute of Technology
+url: suhask.github.io
+enforce_ssl: suhaskr.github.io
+description: Suhas' personal website
+
+collections:
+  ml:
+    output: true
+  math:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: ml
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: math
+    values:
+      layout: post
